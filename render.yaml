@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: rsshub
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm run start
+    branches:
+      - main
